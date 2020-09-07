@@ -19,6 +19,9 @@ or
 - seaborn
 
 # 使用算法
+在使用算法之前，先要对数据进行[预处理](https://github.com/RobinLuoNanjing/air_pollutants_prediction_lstm/blob/master/data_process.ipynb)
+
+
 - lstm (单变量)
 - lstm (单站点, 多变量, 共8变量)
 - lstm (多站点, 多变量, 共40变量)
