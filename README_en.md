@@ -82,7 +82,7 @@ Here is the result for predicting the NOX value in future 96 hours in Bloomsbury
 
 
 
-### 致谢
+### Ackowledgement
 - [Openair](https://davidcarslaw.github.io/openair/)
 - [ndrplz](https://github.com/ndrplz/ConvLSTM_pytorch)
 
