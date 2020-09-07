@@ -1,13 +1,12 @@
 # air_pollutants_prediction_lstm
-这个项目是用于预测伦敦空气质量的状况。其中有五个监测站的数据被选用。这五个监测站分别是:Harlington, North Kensington, Marylebone, Bloomsbury and Eltham. 该数据来源为openair开源库。数据
-的时间跨度为2018-2019。数据的属性有:NOX, NO2, NO, O3, PM2.5, 风速, 风向和空气温度。因为是用于水毕业的论文，所以整个实验并没有采用面向对象的方式进行封装，所以比较杂乱，见谅。但这样也有好处，就是任何单独的一个Jupter notebook文件
-都可以独立的运行实验，并且完成实验的结果。
+This project is for predicting the future condition of the air pollutants in London. There are 5 monitoring stations data will be used in this project, including Harlington, North Kensington, Marylebone, Bloomsbury and Eltham. The data sources from openair, which is an opensource package. The date of data ranges from 2018 to 2019. Air pollutants include NOX, NO2, NO, O3, PM2.5, wind direction, wind speed and the temperature of the air. Since the code is not the object-oriented style, it might be messy but each file can be operated independently.
+
 
 ![image](https://github.com/RobinLuoNanjing/air_pollutants_prediction_lstm/blob/master/MD_pic/location.jpg)
 
 
-# 运行环境
-- google colab (建议)
+# Environment
+- google colab (Recommand)
 
 or
 
@@ -16,32 +15,32 @@ or
 - matplotlib
 - seaborn
 
-# 使用算法
-- lstm (单变量)
-- lstm (单站点, 多变量, 共8变量)
-- lstm (多站点, 多变量, 共40变量)
+# Models
+- lstm (single variable)
+- lstm (1 site, 8 variables)
+- lstm (5 sites, 40 variables)
 - BiLSTM 
 - [ConvLSTM](https://github.com/RobinLuoNanjing/air_pollutants_prediction_lstm/blob/master/convlstm_multivar_sites.ipynb)
 - LSTM + Attention
 - LightGBM
 - ARIMA
 
-> 注意: 除了BiLSTM以外，其余算法全都采用双层的全连接层。
+> note: Except for BiLSTM, all models use 2 fully-connected layers
 
+# Introduction
 
-# 介绍
+## Dataset split
+80% training dataset， 10% validation dataset，10% testing dataset。
 
-## 数据集划分
-80% 训练集， 10% 验证集，10%测试集。
+## Evaluation metrics
+There are two methods to evaluate the model. First, it will use 10% testing data to predict the future for 1 hour. It is worth noting that the predicted value will not be inserted into the time window. We only use this method to find the model which is possible to predict a longer period. After that, it will use this model to predict the future 96 hours. Every time predicting one value, this value will be inserted into the next time window. This will cause more offset when you want to predict a long period value in the future.
 
-## 评估方法
-注意！该实验的评估方法有两种。一种是用10%的测试集去评测。这意味着模型只需要预测未来1小时的情况。然后预测10%个相应的1小时。预测出来的值是不会重新放回time window里的。
-另外一种，就是用上面筛选出来的模型去预测未来96小时的情况。每预测1小时，预测出来的新的值，将会塞回时间窗口。所以这个过程，偏移将会越来越大。
 
 ![image](https://github.com/RobinLuoNanjing/air_pollutants_prediction_lstm/blob/master/MD_pic/time_window.jpg)
 
-## 结果
-下面是预测Bloomsbury未来96小时的NOX含量的结果
+## Result
+Here is the result for predicting the NOX value in future 96 hours in Bloomsbury, London
+
 ![image](https://github.com/RobinLuoNanjing/air_pollutants_prediction_lstm/blob/master/MD_pic/results_nox.png)
 
 
