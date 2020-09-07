@@ -16,6 +16,8 @@ or
 - seaborn
 
 # Models
+Before implementing these models, you need to [preprocess data](https://github.com/RobinLuoNanjing/air_pollutants_prediction_lstm/blob/master/data_process.ipynb) and understand it.
+
 - lstm (single variable)
 - lstm (1 site, 8 variables)
 - lstm (5 sites, 40 variables)
