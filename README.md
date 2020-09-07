@@ -19,7 +19,7 @@ or
 - seaborn
 
 # 使用算法
-在使用算法之前，先要对数据进行[预处理](https://github.com/RobinLuoNanjing/air_pollutants_prediction_lstm/blob/master/data_process.ipynb)
+在使用算法之前，先要对数据进行[预处理](https://github.com/RobinLuoNanjing/air_pollutants_prediction_lstm/blob/master/data_process.ipynb)并且理解他们。
 
 
 - lstm (单变量)
