@@ -1,3 +1,5 @@
+### English version README can be seen here [English version](https://github.com/RobinLuoNanjing/air_pollutants_prediction_lstm/blob/master/README_en.md)
+
 # air_pollutants_prediction_lstm
 这个项目是用于预测伦敦空气质量的状况。其中有五个监测站的数据被选用。这五个监测站分别是:Harlington, North Kensington, Marylebone, Bloomsbury and Eltham. 该数据来源为openair开源库。数据
 的时间跨度为2018-2019。数据的属性有:NOX, NO2, NO, O3, PM2.5, 风速, 风向和空气温度。因为是用于水毕业的论文，所以整个实验并没有采用面向对象的方式进行封装，所以比较杂乱，见谅。但这样也有好处，就是任何单独的一个Jupter notebook文件
