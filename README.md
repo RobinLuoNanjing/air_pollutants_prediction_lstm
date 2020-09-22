@@ -22,14 +22,14 @@ or
 在使用算法之前，先要对数据进行[预处理](https://github.com/RobinLuoNanjing/air_pollutants_prediction_lstm/blob/master/data_process.ipynb)并且理解他们。
 
 
-- lstm (单变量)(https://github.com/RobinLuoNanjing/air_pollutants_prediction_lstm/blob/master/lstm_singvar.ipynb)
-- lstm (单站点, 多变量, 共8变量)(https://github.com/RobinLuoNanjing/air_pollutants_prediction_lstm/blob/master/lstm_multivar.ipynb)
-- lstm (多站点, 多变量, 共40变量)(https://github.com/RobinLuoNanjing/air_pollutants_prediction_lstm/blob/master/lstm_multivar_sites.ipynb)
-- BiLSTM (https://github.com/RobinLuoNanjing/air_pollutants_prediction_lstm/blob/master/Bilstm_multivar.ipynb)
+- [lstm (单变量)](https://github.com/RobinLuoNanjing/air_pollutants_prediction_lstm/blob/master/lstm_singvar.ipynb)
+- [lstm (单站点, 多变量, 共8变量)](https://github.com/RobinLuoNanjing/air_pollutants_prediction_lstm/blob/master/lstm_multivar.ipynb)
+- [lstm (多站点, 多变量, 共40变量)](https://github.com/RobinLuoNanjing/air_pollutants_prediction_lstm/blob/master/lstm_multivar_sites.ipynb)
+- [BiLSTM] (https://github.com/RobinLuoNanjing/air_pollutants_prediction_lstm/blob/master/Bilstm_multivar.ipynb)
 - [ConvLSTM](https://github.com/RobinLuoNanjing/air_pollutants_prediction_lstm/blob/master/convlstm_multivar_sites.ipynb)
-- LSTM + Attention (https://github.com/RobinLuoNanjing/air_pollutants_prediction_lstm/blob/master/lstmWithAttention_multivar_sites.ipynb)
-- LightGBM (https://github.com/RobinLuoNanjing/air_pollutants_prediction_lstm/blob/master/lightGBM_multivar_single_sites.ipynb)
-- ARIMA (https://github.com/RobinLuoNanjing/air_pollutants_prediction_lstm/blob/master/ARIMA.ipynb)
+- [LSTM + Attention] (https://github.com/RobinLuoNanjing/air_pollutants_prediction_lstm/blob/master/lstmWithAttention_multivar_sites.ipynb)
+- [LightGBM] (https://github.com/RobinLuoNanjing/air_pollutants_prediction_lstm/blob/master/lightGBM_multivar_single_sites.ipynb)
+- [ARIMA] (https://github.com/RobinLuoNanjing/air_pollutants_prediction_lstm/blob/master/ARIMA.ipynb)
 
 > 注意: 除了BiLSTM以外，其余算法全都采用双层的全连接层。
 
