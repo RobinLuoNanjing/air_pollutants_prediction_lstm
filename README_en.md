@@ -18,14 +18,14 @@ or
 # Models
 Before implementing these models, you need to [preprocess data](https://github.com/RobinLuoNanjing/air_pollutants_prediction_lstm/blob/master/data_process.ipynb) and understand it.
 
-- lstm (single variable)
-- lstm (1 site, 8 variables)
-- lstm (5 sites, 40 variables)
-- BiLSTM 
+- [lstm (single variable)](https://github.com/RobinLuoNanjing/air_pollutants_prediction_lstm/blob/master/lstm_singvar.ipynb)
+- [lstm (1 site, 8 variables)](https://github.com/RobinLuoNanjing/air_pollutants_prediction_lstm/blob/master/lstm_multivar.ipynb)
+- [lstm (5 sites, 40 variables)](https://github.com/RobinLuoNanjing/air_pollutants_prediction_lstm/blob/master/lstm_multivar_sites.ipynb)
+- [BiLSTM](https://github.com/RobinLuoNanjing/air_pollutants_prediction_lstm/blob/master/Bilstm_multivar.ipynb)
 - [ConvLSTM](https://github.com/RobinLuoNanjing/air_pollutants_prediction_lstm/blob/master/convlstm_multivar_sites.ipynb)
-- LSTM + Attention
-- LightGBM
-- ARIMA
+- [LSTM + Attention](https://github.com/RobinLuoNanjing/air_pollutants_prediction_lstm/blob/master/lstmWithAttention_multivar_sites.ipynb)
+- [LightGBM](https://github.com/RobinLuoNanjing/air_pollutants_prediction_lstm/blob/master/lightGBM_multivar_single_sites.ipynb)
+- [ARIMA](https://github.com/RobinLuoNanjing/air_pollutants_prediction_lstm/blob/master/ARIMA.ipynb)
 
 > note: Except for BiLSTM, all models use 2 fully-connected layers
 
